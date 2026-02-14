@@ -7,14 +7,24 @@
         body {
             margin: 0;
             font-family: 'Georgia', serif;
-            background: linear-gradient(to bottom, #fdf6e3, #f5e6cc);
+            background-image: url("https://images.unsplash.com/photo-1512820790803-83ca734da794");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
             text-align: center;
-            color: #4e342e;
+        }
+
+        /* Overlay agar tulisan jelas */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.65);
+            min-height: 100vh;
+            padding-bottom: 50px;
         }
 
         /* Navbar */
         .navbar {
-            background-color: #6d4c41;
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 15px;
         }
 
@@ -32,7 +42,6 @@
 
         h2 {
             margin-top: 40px;
-            color: #5d4037;
         }
 
         p {
@@ -56,14 +65,23 @@
             background-color: #5d4037;
         }
 
-        /* Logo Instagram */
-        .instagram img {
-            width: 50px;
+        /* Instagram */
+        .instagram {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
             margin-top: 15px;
+        }
+
+        .instagram img {
+            width: 40px;
             transition: 0.3s;
         }
 
-        .instagram img:hover {
+        .instagram:hover img {
             transform: scale(1.1);
         }
 
@@ -76,7 +94,8 @@
 </head>
 <body>
 
-    <!-- Navbar -->
+<div class="overlay">
+
     <div class="navbar">
         <a href="#">Home</a>
     </div>
@@ -101,6 +120,7 @@
        target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
              alt="Instagram">
+        ershy_kembaren
     </a>
 
     <h2>Video Saya</h2>
@@ -110,6 +130,8 @@
         src="https://www.youtube.com/embed/ZZ3USTAASI8" 
         allowfullscreen>
     </iframe>
+
+</div>
 
 </body>
 </html>
