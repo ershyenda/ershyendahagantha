@@ -15,7 +15,6 @@
             text-align: center;
         }
 
-        /* Overlay agar tulisan jelas */
         .overlay {
             background-color: rgba(0, 0, 0, 0.65);
             min-height: 100vh;
@@ -33,6 +32,11 @@
             text-decoration: none;
             font-size: 20px;
             font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
         }
 
         h1 {
@@ -49,7 +53,6 @@
             padding: 0 30px;
         }
 
-        /* Tombol CV */
         .cv-link {
             display: inline-block;
             margin-top: 15px;
@@ -65,7 +68,6 @@
             background-color: #5d4037;
         }
 
-        /* Instagram */
         .instagram {
             display: inline-flex;
             align-items: center;
@@ -89,6 +91,12 @@
             margin-top: 20px;
             border-radius: 10px;
         }
+
+        /* Ukuran video lebih kecil */
+        .video {
+            width: 60%;
+            height: 300px;
+        }
     </style>
 
 </head>
@@ -98,6 +106,7 @@
 
     <div class="navbar">
         <a href="#">Home</a>
+        <a href="#profil">Profil</a>
     </div>
 
     <h1>Perpustakaan Ershy</h1>
@@ -107,6 +116,12 @@
         ruang pembelajaran dan pengembangan web yang interaktif serta mudah diakses.
     </p>
 
+    <h2 id="profil">Profil</h2>
+    <p>
+        Halo, saya Ershy. Website ini berisi Curriculum Vitae, Instagram, 
+        dan video yang menampilkan informasi tentang saya.
+    </p>
+
     <h2>Curriculum Vitae</h2>
     <a class="cv-link" 
        href="https://drive.google.com/file/d/16FOXkwBs-D8bEVZh1tqnbYVAXo7akRwL/view" 
@@ -114,7 +129,7 @@
        Klik CV untuk membuka CV saya
     </a>
 
-    
+    <h2>Instagram</h2>
     <a class="instagram" 
        href="https://www.instagram.com/ershy_kembaren" 
        target="_blank">
@@ -125,8 +140,7 @@
 
     <h2>Video Saya</h2>
     <iframe 
-        width="80%" 
-        height="400" 
+        class="video"
         src="https://www.youtube.com/embed/ZZ3USTAASI8" 
         allowfullscreen>
     </iframe>
