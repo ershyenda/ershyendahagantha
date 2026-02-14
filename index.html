@@ -2,80 +2,113 @@
 <html>
 <head>
     <title>Perpustakaan Ershy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1b5e20;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #1b5e20;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #2f4f4f;
+            padding: 0 20px;
+        }
+
+        .button {
+            text-decoration: none;
+            background-color: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1b5e20;
+        }
+
+        iframe {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
 </head>
 <body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#profile">Profile</a>
+    </div>
 
     <h1>Perpustakaan Ershy</h1>
 
     <h2>Selamat Datang</h2>
-
     <p>
         Selamat datang di Perpustakaan Ershy. Situs ini merupakan perpustakaan berbasis web 
         yang dirancang untuk mendukung proses pembelajaran dan pengembangan web 
         secara interaktif dan mudah diakses.
     </p>
 
-        <a href="https://www.instagram.com/ershy_kembaren" target="_blank">
-            Klik untuk membuka Instagram saya
-        </a>
+    <h2 id="profile">Profile</h2>
+    <p>
+        Halo, saya Ershy. Ini adalah website pribadi saya yang berisi CV, video, 
+        dan informasi lainnya.
     </p>
-<p>
-    <a href="https://drive.google.com/file/d/16FOXkwBs-D8bEVZh1tqnbYVAXo7akRwL/view" target="_blank">
-        Klik untuk melihat CV saya
+
+    <h2>Instagram</h2>
+    <a class="button" href="https://www.instagram.com/ershy_kembaren" target="_blank">
+        Klik untuk membuka Instagram saya
     </a>
-</p>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pencarian di Basis Data Scopus</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-        }
+    <h2>Curriculum Vitae</h2>
+    <iframe 
+        src="https://drive.google.com/file/d/16FOXkwBs-D8bEVZh1tqnbYVAXo7akRwL/preview" 
+        width="80%" 
+        height="500">
+    </iframe>
 
-        h1 {
-            margin-top: 40px;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-
-        .video-container iframe {
-            width: 90%;
-            max-width: 900px;
-            height: 500px;
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>Bagaimana Cara Melakukan Pencarian di Basis Data Scopus?</h1>
-
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/ZZ3USTAASI8"
-            allowfullscreen>
-        </iframe>
-    </div>
+    <h2>Video Saya</h2>
+    <iframe 
+        width="80%" 
+        height="400" 
+        src="https://www.youtube.com/embed/ZZ3USTAASI8" 
+        allowfullscreen>
+    </iframe>
 
 </body>
-</html>
-
-
-
-    
-
-    
+</html>            
