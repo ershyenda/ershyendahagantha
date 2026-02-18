@@ -8,9 +8,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
-    background: #2c3e50;
+    background: #0a1f44; /* biru dongker */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -31,11 +31,11 @@ body {
     text-decoration: none;
 }
 
-/* Hero */
+/* HERO */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(to right, #74ebd5, #9face6);
+    background: linear-gradient(to right, #0a1f44, #163a7d);
     color: white;
 }
 
@@ -53,11 +53,16 @@ body {
 .btn {
     padding: 10px 20px;
     background: white;
-    color: #2c3e50;
+    color: #0a1f44;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px;
     display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .outline {
@@ -66,17 +71,18 @@ body {
     color: white;
 }
 
-/* Contact */
+/* CONTACT */
 .contact {
     text-align: center;
     padding: 40px 20px;
-    background: #f4f4f4;
+    background: #f4f6fb;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
-    background: #2c3e50;
+    background: #0a1f44;
     color: white;
 }
+
