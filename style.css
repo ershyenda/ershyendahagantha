@@ -6,15 +6,20 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f7fc;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #0a1f44; /* biru dongker */
+    background: #0f1c3f;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
+}
+
+.navbar h2 {
+    font-weight: bold;
 }
 
 .navbar ul {
@@ -29,36 +34,61 @@ body {
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #cdd8ff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #0f1c3f;
+    color: white;
 }
 
 .hero img {
     width: 220px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
-}
-
     border: 4px solid white;
 }
 
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* BUTTON */
 .buttons {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: white;
-    color: #0a1f44;
+    color: #0f1c3f;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 30px;
     margin: 10px;
     display: inline-block;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    background: #1b2f6b;
+    color: white;
 }
 
 .outline {
@@ -67,18 +97,27 @@ body {
     color: white;
 }
 
+.outline:hover {
+    background: white;
+    color: #0f1c3f;
+}
+
 /* CONTACT */
 .contact {
     text-align: center;
-    padding: 40px 20px;
-    background: #f4f6fb;
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
-    background: #0a1f44;
+    background: #0f1c3f;
     color: white;
 }
 
