@@ -121,3 +121,26 @@ footer {
     color: white;
 }
 
+/* VIDEO SECTION */
+.video {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f5f7fc;
+}
+
+.video h2 {
+    margin-bottom: 20px;
+    color: #0f1c3f;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
