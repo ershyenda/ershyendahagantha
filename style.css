@@ -40,7 +40,7 @@ body {
 .navbar ul li a:hover {
     color: #cdd8ff;
 }
-.logo-area {
+. {
     display: flex;
     align-items: center;
     gap: 15px;
