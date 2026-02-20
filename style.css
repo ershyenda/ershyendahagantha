@@ -40,7 +40,17 @@ body {
 .navbar ul li a:hover {
     color: #cdd8ff;
 }
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
 /* HERO */
 .hero {
     text-align: center;
