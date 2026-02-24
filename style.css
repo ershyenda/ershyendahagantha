@@ -1,7 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
-    margin:0;
     font-family: Arial, Helvetica, sans-serif;
+    background:white;
 }
 
 /* NAVBAR */
@@ -14,17 +19,11 @@ body{
     box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
-.navbar-left h2{
-    margin:0;
-}
-
 /* MENU */
 .menu{
     display:flex;
     list-style:none;
     gap:20px;
-    margin:0;
-    padding:0;
 }
 
 .menu a{
@@ -62,6 +61,7 @@ body{
     font-size:25px;
 }
 
+/* BUTTON */
 .btn{
     padding:10px 20px;
     background:black;
@@ -75,3 +75,4 @@ body{
     color:black;
     border:1px solid black;
 }
+    
