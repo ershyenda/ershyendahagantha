@@ -125,10 +125,10 @@ body {
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #0f1c3f;
+    background-color: #007BFF;  /* Biru sama seperti navbar */
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 /* VIDEO SECTION */
