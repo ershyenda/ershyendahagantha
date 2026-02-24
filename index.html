@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Ershy Enda Hagantha</title>
 
-    <!-- FONT AWESOME (WAJIB) -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- CSS KAMU -->
@@ -14,31 +14,10 @@
 
 <body>
 <div class="navbar">
-<div id="homePage">
-  div id="loginPage" style="display:none;">
 
-<h2>Form Pendaftaran Anggota</h2>
-
-<form onsubmit="return daftar()">
-
-<label>First Name</label><br>
-<input type="text" id="firstName" required><br><br>
-
-<label>Last Name</label><br>
-<input type="text" id="lastName" required><br><br>
-
-<label>Nomor HP</label><br>
-<input type="tel" id="phone" required><br><br>
-
-<label>Email</label><br>
-<input type="email" id="email" required><br><br>
-
-<button type="submit">Daftar Anggota</button>
-
-</form>
 
 </div> 
-    <button onclick="showLogin()">Login Anggota</button>
+    
 </div>
     <h2>Perpustakaan Ershy</h2>
 
@@ -47,12 +26,7 @@
         <li><a href="#">Kontak</a></li>
     </ul>
 
-</div>
-<div id="homePage">
-</div>
 
-<div id="loginPage" style="display:none;">
-</div>
  
     <section id="home" class="hero">
         <img src="foto.jpg" alt="Foto Ershy" width="200">
@@ -104,29 +78,9 @@ untuk mendukung proses pembelajaran dan pengembangan web secara interaktif dan m
             <i class="fas fa-envelope"></i>
         </a>
 
-    </div>
+    
 
-    <footer>
-        <p>© 2026 Perpustakaan Ershy Enda Hagantha</p>
-    </footer>
-<script>
 
-function showLogin() {
-    document.getElementById("homePage").style.display = "none";
-    document.getElementById("loginPage").style.display = "block";
-}
-
-function showHome() {
-    document.getElementById("homePage").style.display = "block";
-    document.getElementById("loginPage").style.display = "none";
-}
-
-function daftar() {
-    alert("Pendaftaran berhasil!");
-    return false;
-}
-
-</script>
 </body>
 </html>
 
