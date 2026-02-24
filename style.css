@@ -112,20 +112,25 @@ body {
     color: #0f1c3f;
 }
 
-/* CONTACT */
-.contact {
+.kontak {
+    background: linear-gradient(90deg, #0056b3, #007BFF);
+    color: white;
     text-align: center;
-    padding: 60px 20px;
-    background: #ffffff;
+    padding: 50px 20px;
 }
 
-.contact h2 {
-    margin-bottom: 15px;
+.kontak h2 {
+    margin-bottom: 10px;
 }
 
-/* FOOTER */
+.kontak p {
+    margin-bottom: 30px;
+}
+
+
+/* ===== FOOTER ===== */
 footer {
-    background-color: #007BFF;  /* Biru sama seperti navbar */
+    background: linear-gradient(90deg, #0056b3, #007BFF);
     color: white;
     text-align: center;
     padding: 20px;
