@@ -11,7 +11,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 50px;
 }
@@ -23,8 +23,8 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
+    margin-left: auto;
 }
-
 .navbar ul li {
     margin-left: 20px;
 }
