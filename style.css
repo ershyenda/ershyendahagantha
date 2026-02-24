@@ -19,9 +19,9 @@ body {
 }
 
 .navbar h2 {
-    font-weight: bold;
+    color: white;
+    margin: 0;
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
