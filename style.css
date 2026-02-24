@@ -9,13 +9,11 @@ body {
     background-color: #f5f7fc;
 }
 
-/* NAVBAR */
 .navbar {
-    background: #0f1c3f;
-    color: white;
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 .navbar h2 {
