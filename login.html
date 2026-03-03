@@ -1,18 +1,18 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard Anggota</title>
+    <title>Login Anggota - LiberaSpace</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>LiberaSpace</h1>
-<body>
-
-<header>
-    <h1>LiberaSpace</h1>
+    <div class="logo">
+        <h1>LiberaSpace</h1>
+        <p>Ruang Literasi Digital Sekolah</p>
+    </div>
 
     <nav>
         <a href="index.html">Beranda</a>
@@ -20,35 +20,39 @@
         <a href="katalog.html">Katalog</a>
         <a href="kontak.html">Kontak</a>
         <a href="login.html">Login</a>
-    </nav> 
-       
+    </nav>
 </header>
 
-<main style="padding:20px;">
+<main style="text-align:center; padding:40px;">
     <h2>Login Anggota</h2>
 
-    <!-- form login kamu di sini -->
-</main>
+    <form onsubmit="return loginUser()">
+        <input type="text" id="username" placeholder="Username" required><br><br>
+        <input type="password" id="password" placeholder="Password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
 
-</body>
-
-<main style="padding:20px;">
-    <h2>Selamat Datang Anggota</h2>
-    <p>Anda berhasil login.</p>
-
-    <button onclick="logout()">Logout</button>
+    <p id="pesan" style="color:red;"></p>
 </main>
 
 <script>
-if(localStorage.getItem("login") !== "true") {
-    window.location.href = "login.html";
-}
+function loginUser() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
 
-function logout() {
-    localStorage.removeItem("login");
-    window.location.href = "login.html";
+    if(user === "anggota" && pass === "12345") {
+        alert("Login berhasil!");
+        return false;
+    } else {
+        document.getElementById("pesan").innerHTML = "Username atau Password salah!";
+        return false;
+    }
 }
 </script>
+
+<footer>
+    <p>© 2026 LiberaSpace</p>
+</footer>
 
 </body>
 </html>
