@@ -1,78 +1,47 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:white;
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
 }
 
-/* NAVBAR */
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 30px;
-    background:white;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
-/* MENU */
-.menu{
-    display:flex;
-    list-style:none;
-    gap:20px;
+.logo p {
+    margin: 5px 0 10px;
+    font-size: 14px;
 }
 
-.menu a{
-    text-decoration:none;
-    color:black;
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* HERO */
-.hero{
-    text-align:center;
-    padding:50px 20px;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* VIDEO */
-.video{
-    text-align:center;
-    padding:40px 20px;
+main {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
 }
 
-.video-container iframe{
-    width:60%;
-    height:300px;
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
 }
-
-/* KONTAK */
-.kontak{
-    text-align:center;
-    padding:40px 20px;
-}
-
-.social-icons{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    font-size:25px;
-}
-
-/* BUTTON */
-.btn{
-    padding:10px 20px;
-    background:black;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-}
-
-.btn.outline{
-    background:white;
-    color:black;
-    border:1px solid black;
-}
-    
