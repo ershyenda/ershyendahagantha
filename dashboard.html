@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Anggota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>LiberaSpace</h1>
+</header>
+
+<main style="padding:20px;">
+    <h2>Selamat Datang Anggota</h2>
+    <p>Anda berhasil login.</p>
+
+    <button onclick="logout()">Logout</button>
+</main>
+
+<script>
+if(localStorage.getItem("login") !== "true") {
+    window.location.href = "login.html";
+}
+
+function logout() {
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
