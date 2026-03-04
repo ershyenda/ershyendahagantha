@@ -45,3 +45,57 @@ footer {
     padding: 10px;
     background: #ddd;
 }
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #2563eb;
+}
+
+/* Section bawah */
+
+.tentang {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+}
+
+.tentang h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.tentang p {
+    max-width: 700px;
+    margin: auto;
+    color: #444;
+    line-height: 1.6;
+}
