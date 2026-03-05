@@ -1,15 +1,16 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
     margin: 0;
-    background-color: #f4f6f9;
+    padding: 0;
+    color: white;
 }
 
-header {
-    background-color: #1e3a8a;
+header{
+    background: #1e3a8a;
     color: white;
-    padding: 15px 0;
-    text-align: center;
+    padding: 15px;
 }
 
 .logo h1 {
@@ -22,13 +23,16 @@ header {
     font-size: 14px;
 }
 
-nav a {
+nav a{
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+    margin: 0 10px;
     font-weight: bold;
 }
 
+nav a:hover{
+    color: #93c5fd;
+}
 nav a:hover {
     text-decoration: underline;
 }
@@ -76,11 +80,17 @@ footer {
     transition: 0.3s;
 }
 
-.btn-hero:hover {
-    background-color: #2563eb;
+.btn{
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
-/* Section bawah */
+.btn:hover{
+    background: #1e3a8a;
+}
 
 .tentang {
     text-align: center;
