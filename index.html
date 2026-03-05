@@ -66,10 +66,25 @@ Tempat membaca, belajar, dan menemukan pengetahuan.</p>
 
 </section>
 
-
+</main>
 
   <p>© 2026 LiberaSpace</p>
 </footer>
+<script>
 
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute('data-target');
+const count = +counter.innerText;
+
+const increment = target / 100;
+
+if(count < target){
+
+counter.innerText
 </body>
 </html>
