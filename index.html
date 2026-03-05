@@ -75,21 +75,64 @@ Tempat membaca, belajar, dan menemukan pengetahuan.</p>
 
 
 
+
+
 <script>
 
-const counters = document.querySelectorAll('.counter');
+const counters = document.querySelectorAll(".counter");
+
+function startCounter(){
 
 counters.forEach(counter => {
 
-const updateCounter = () => {
+const target = +counter.getAttribute("data-target");
 
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
+let count = 0;
+
+const updateCounter = () => {
 
 const increment = target / 100;
 
 if(count < target){
 
-counter.innerText
+count += increment;
+counter.innerText = Math.ceil(count);
+
+setTimeout(updateCounter,20);
+
+}else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCounter();
+
+});
+
+}
+
+let started = false;
+
+window.addEventListener("scroll", function(){
+
+const statistik = document.querySelector(".statistik");
+
+const posisi = statistik.getBoundingClientRect().top;
+
+const layar = window.innerHeight;
+
+if(posisi < layar && !started){
+
+startCounter();
+started = true;
+
+}
+
+});
+
+</script>
 </body>
 </html>
