@@ -51,6 +51,33 @@
 </section>
 
 </main>
+<script>
 
+function addQuestion(){
+
+const input = document.getElementById("questionInput");
+
+const text = input.value;
+
+if(text === ""){
+alert("Tulis pertanyaan dulu!");
+return;
+}
+
+const list = document.getElementById("questionList");
+
+const card = document.createElement("div");
+
+card.className = "question-card";
+
+card.innerHTML = "💬 " + text;
+
+list.prepend(card);
+
+input.value = "";
+
+}
+
+</script>
 </body>
 </html>
