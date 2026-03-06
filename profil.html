@@ -28,31 +28,31 @@
             yang dirancang untuk mendukung kegiatan literasi 
             di lingkungan sekolah tingkat menengah pertama (SMP).
         </p>
-    </section>
+    
+<section class="visi-misi">
 
-    <section>
-        <h3>Visi</h3>
-        <p>
-            Mendukung terciptanya lingkungan belajar yang aktif, 
-            kreatif, dan berbudaya literasi melalui pemanfaatan teknologi digital.
-        </p>
-    </section>
+<h2>Visi & Misi LiberaSpace</h2>
 
-    <section>
-        <h3>Misi</h3>
-        <ul>
-            <li>Menyediakan akses informasi dan katalog buku secara online.</li>
-            <li>Meningkatkan minat baca siswa melalui sistem perpustakaan digital.</li>
-            <li>Mendukung kegiatan belajar mengajar berbasis literasi.</li>
-        </ul>
-    </section>
+<div class="box-profil reveal">
+<h3>Visi</h3>
+<p>
+Mendukung terciptanya lingkungan belajar yang aktif, kreatif,
+dan berbudaya literasi melalui pemanfaatan teknologi digital.
+</p>
+</div>
 
-    <section>
-        <h3>Peran Perpustakaan</h3>
-        <p>
-            Perpustakaan sekolah berperan sebagai pusat sumber belajar 
-            yang membantu siswa dan guru dalam memperoleh referensi, 
-            bahan bacaan, serta informasi akademik yang relevan.
+<div class="box-profil reveal">
+<h3>Misi</h3>
+<ul>
+<li>Menyediakan akses informasi dan katalog buku secara online.</li>
+<li>Meningkatkan minat baca siswa melalui sistem perpustakaan digital.</li>
+<li>Mendukung kegiatan belajar mengajar berbasis literasi.</li>
+</ul>
+</div>
+
+</section>
+    
+    
         </p>
     </section>
 
@@ -61,6 +61,19 @@
 <footer>
     <p>&copy; 2026 LiberaSpace</p>
 </footer>
+<script>
+window.addEventListener("scroll", function() {
+let elements = document.querySelectorAll(".reveal");
 
+elements.forEach(function(el){
+let windowHeight = window.innerHeight;
+let elementTop = el.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 100){
+el.classList.add("active");
+}
+});
+});
+</script>
 </body>
 </html>
