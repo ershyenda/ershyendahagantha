@@ -392,3 +392,13 @@ margin-top:10px;
 .visi-box li{
 margin:5px 0;
 }
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
