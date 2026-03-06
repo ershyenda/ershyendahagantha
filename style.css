@@ -281,3 +281,44 @@ opacity:1;
 transform:translateY(0);
 }
 }
+.koleksi{
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3a8a, #274bb5);
+    color: white;
+}
+
+.koleksi h2{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.koleksi-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.koleksi-card{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 25px;
+    width: 230px;
+    transition: 0.3s;
+}
+
+.koleksi-card h3{
+    margin: 10px 0;
+}
+
+.koleksi-card p{
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.koleksi-card:hover{
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.2);
+}
