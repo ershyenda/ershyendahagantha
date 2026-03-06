@@ -22,7 +22,44 @@
 </header>
 
 <main>
+<body>
 
+<header>
+<h1>LiberaSpace</h1>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="katalog.html">Katalog</a>
+<a href="forum.html">Forum</a>
+<a href="kontak.html">Kontak</a>
+</nav>
+
+</header>
+
+<main>
+
+<section class="forum">
+
+<h2>Forum Diskusi LiberaSpace</h2>
+<p>Tanyakan sesuatu tentang buku atau pelajaran.</p>
+
+<div class="forum-form">
+
+<textarea id="questionInput" placeholder="Tulis pertanyaan kamu..."></textarea>
+
+<button onclick="addQuestion()">
+💬 Kirim Pertanyaan
+</button>
+
+</div>
+
+<div id="questionList" class="question-list"></div>
+
+</section>
+
+</main>
+
+</body>
 <section class="forum">
 
 <h2>Forum Diskusi</h2>
@@ -80,4 +117,30 @@ input.value = "";
 
 </script>
 </body>
+  <script>
+
+function addQuestion(){
+
+const input = document.getElementById("questionInput");
+const text = input.value;
+
+if(text === ""){
+alert("Tulis pertanyaan dulu!");
+return;
+}
+
+const list = document.getElementById("questionList");
+
+const card = document.createElement("div");
+card.className = "question-card";
+
+card.innerHTML = "💬 " + text;
+
+list.prepend(card);
+
+input.value = "";
+
+}
+
+</script>
 </html>
