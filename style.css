@@ -251,7 +251,6 @@ button:hover{
 background:#1e3a8a;
 }
 
-/* daftar pertanyaan */
 
 .question-list{
 margin-top:40px;
@@ -293,32 +292,33 @@ transform:translateY(0);
     margin-bottom: 40px;
 }
 
+
 .koleksi-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 25px;
     flex-wrap: wrap;
 }
 
+
 .koleksi-card{
     background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
     border-radius: 12px;
     padding: 25px;
     width: 230px;
-    transition: 0.3s;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.koleksi-card h3{
-    margin: 10px 0;
-}
-
-.koleksi-card p{
-    font-size: 14px;
-    opacity: 0.9;
-}
 
 .koleksi-card:hover{
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     background: rgba(255,255,255,0.2);
+}
+
+
+.koleksi-card:active{
+    transform: scale(0.96);
 }
