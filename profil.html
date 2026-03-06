@@ -58,18 +58,23 @@ kreatif, dan berbudaya literasi melalui pemanfaatan teknologi digital.
 <footer>
     <p>&copy; 2026 LiberaSpace</p>
 </footer>
+
 <script>
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function(){
+
 let elements = document.querySelectorAll(".reveal");
 
 elements.forEach(function(el){
+
 let windowHeight = window.innerHeight;
 let elementTop = el.getBoundingClientRect().top;
 
 if(elementTop < windowHeight - 100){
 el.classList.add("active");
 }
+
 });
+
 });
 </script>
 </body>
