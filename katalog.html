@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiberaSpace – Katalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light" style="font-family: 'DM Sans', sans-serif;">
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark py-0"
+        style="background-color: #0f2240 !important;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 py-3" href="#"
+                style="font-family: 'Playfair Display', serif;">
+                <div class="bg-warning text-dark rounded fw-bold d-flex align-items-center justify-content-center"
+                    style="width: 36px; height: 36px;">LS</div>
+                LiberaSpace
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto text-uppercase" style="font-size: 0.85rem; letter-spacing: 0.05em;">
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="profil.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4 active border-bottom border-warning border-2"
+                            href="katalog.html">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="forum.html">Forum</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="event.html">Event</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 border-bottom border-warning border-4 text-white" style="background-color: #0f2240;">
+        <div class="container py-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-2" style="font-size: 0.8rem;">
+                    <li class="breadcrumb-item"><a href="index.html"
+                            class="text-white-50 text-decoration-none">Beranda</a></li>
+                    <li class="breadcrumb-item active text-warning" aria-current="page">Katalog</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Katalog Buku</h1>
+            <p class="text-white-50">2.400+ koleksi buku digital siap dibaca</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-bottom py-4">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <div class="input-group border rounded shadow-sm">
+                        <input type="text" class="form-control border-0 py-2 ps-3"
+                            placeholder="Cari judul buku, pengarang...">
+                        <button class="btn btn-dark px-4" style="background-color: #0f2240;"><i
+                                class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-wrap gap-2 justify-content-md-end">
+
+                        <button class="btn btn-sm btn-dark rounded-pill px-3"
+                            style="background-color: #0f2240;">Semua</button>
+
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+                            Matematika
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+                            Bahasa
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+                            IPA
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+                            IPS
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+                            Lainnya
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 text-muted small">Menampilkan <span class="fw-bold text-dark">12</span> dari 2.400+
+                    koleksi</p>
+                <select class="form-select form-select-sm w-auto border-secondary-subtle text-muted">
+                    <option>Terbaru</option>
+                    <option>Terpopuler</option>
+                </select>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://static-sc.cloudapp.web.id/content/image/coverteks/coverkurikulum21/Matematika-BG-KLS-VII-cover.png"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Matematika</span>
+                            <h6 class="fw-bold mt-2">Matematika Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★★ (4.9)</div>
+                            <!-- <a href="katalog-detail-matematika-7.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://mtsfalahulhuda.sch.id/wp-content/uploads/2024/11/Bahasa-Indonesia-untuk-SMPMTS-Kelas-VII-Edisi-Revisi-Cover.png"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Bahasa Indonesia</span>
+                            <h6 class="fw-bold mt-2">Bahasa Indonesia Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★★ (4.8)</div>
+                            <!-- <a href="katalog-detail-bindo-7.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://online.fliphtml5.com/nlzlx/ytyf/files/large/b98e6d4405ba9c3d60673e5fc9bc39be.webp?1680752241"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">IPA</span>
+                            <h6 class="fw-bold mt-2">IPA Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★☆ (4.7)</div>
+                            <!-- <a href="katalog-detail-ipa-7.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4MBUzabe0INiDwuWY1WPuMoo-jo0jUXVHw&s"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">IPS</span>
+                            <h6 class="fw-bold mt-2">IPS Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★★ (4.8)</div>
+                            <!-- <a href="katalog-detail-ips-7.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg6mAKP4S9Jb7qiZiAIUWeBuYyH7LK3TBESg&s"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Bahasa Inggris</span>
+                            <h6 class="fw-bold mt-2">Bahasa Inggris Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★☆ (4.6)</div>
+                            <!-- <a href="katalog-detail-binggris-8.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPBjz4nZUdCdVEUK_MshREyMOAbszDTcE0Q&s"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">PKn</span>
+                            <h6 class="fw-bold mt-2">Pendidikan Kewarganegaraan Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★★ (4.8)</div>
+                            <!-- <a href="katalog-detail-pkn-9.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1RCo_sHkx2jPj39k7S7f82c6JClpp9Xt2g&s"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Agama</span>
+                            <h6 class="fw-bold mt-2">Pendidikan Agama Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★★ (4.9)</div>
+                            <!-- <a href="katalog-detail-agama-7.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://a.cdn-myedisi.com/book/cover/bse-a_59f96f30b3a0a682039846.jpg"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Seni Budaya</span>
+                            <h6 class="fw-bold mt-2">Seni Budaya Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★☆ (4.5)</div>
+                            <!-- <a href="katalog-detail-seni-8.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://www2.erlangga.co.id/images/2023/Prakarya%20Kelas%207.png" class="card-img-top"
+                            style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Prakarya</span>
+                            <h6 class="fw-bold mt-2">Prakarya Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★☆ (4.6)</div>
+                            <!-- <a href="katalog-detail-prakarya-9.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQUwye4C0xpp6XDjixx4c5DyHvVxjYG5CFg&s"
+                            class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary-subtle text-dark">Informatika</span>
+                            <h6 class="fw-bold mt-2">Informatika Kelas VII</h6>
+                            <p class="text-muted small">Kemendikbud</p>
+                            <div class="mb-3">★★★★★ (4.7)</div>
+                            <!-- <a href="katalog-detail-informatika-8.html" class="btn btn-sm w-100 text-white mt-auto"
+                                style="background:#0f2240;">Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-5 pb-3 text-white-50" style="background-color: #0a1828;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <h5 class="text-white brand-font mb-3">LiberaSpace</h5>
+                    <p class="small">Perpustakaan digital sekolah yang menghubungkan siswa, guru, dan komunitas melalui
+                        budaya membaca.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-3">Navigasi</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-white-50">Beranda</a></li>
+                        <li><a href="#" class="text-decoration-none text-white-50">Katalog</a></li>
+                        <li><a href="#" class="text-decoration-none text-white-50">Event</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 offset-lg-3">
+                    <h6 class="text-white mb-3">Kontak</h6>
+                    <p class="small mb-1"><i class="bi bi-geo-alt text-warning me-2"></i> Jl. Pendidikan No. 1, Jakarta
+                    </p>
+                    <p class="small mb-1"><i class="bi bi-envelope text-warning me-2"></i> ershykembaren@gmail.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between small">
+                <span>© 2026 LiberaSpace.</span>
+                <span class="text-warning">Membangun Generasi Literat</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

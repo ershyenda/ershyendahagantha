@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiberaSpace – Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        /* Mengatur font global agar sesuai desain asli */
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #f9f6f0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark py-0"
+        style="background-color: #0f2240 !important;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 py-3" href="#"
+                style="font-family: 'Playfair Display', serif;">
+                <div class="bg-warning text-dark rounded fw-bold d-flex align-items-center justify-content-center"
+                    style="width: 36px; height: 36px;">LS</div>
+                LiberaSpace
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto text-uppercase" style="font-size: 0.85rem; letter-spacing: 0.05em;">
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="profil.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="katalog.html">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4 active border-bottom border-warning border-2"
+                            href="forum.html">Forum</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="event.html">Event</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-4" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 text-white position-relative" style="background-color: #0f2240; border-bottom: 4px solid #c9a84c;">
+        <div class="container py-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-4" style="font-size: 0.85rem;">
+                    <li class="breadcrumb-item"><a href="#" class="text-white-50 text-decoration-none">Beranda</a></li>
+                    <li class="breadcrumb-item active text-warning" aria-current="page">Forum</li>
+                </ol>
+            </nav>
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-3">
+                <div>
+                    <h1 class="display-5 fw-bold mb-1">Forum Diskusi</h1>
+                    <p class="text-white-50 mb-0">Ruang berbagi dan berdiskusi tentang literasi dan pengetahuan</p>
+                </div>
+                <button class="btn fw-bold px-4 py-2" style="background-color: #c9a84c; color: #0f2240;">
+                    <i class="bi bi-plus-lg me-2"></i>Buat Topik Baru
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+
+            <h5 class="mb-4 fw-bold" style="color: #0f2240;">Kategori Forum</h5>
+            <div class="row g-3 mb-5">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center p-4 bg-white border rounded shadow-sm hover-shadow">
+                        <div class="fs-3 me-3 p-2 rounded" style="background-color: #f1f3f5;">📚</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold" style="color: #0f2240;">Diskusi Buku</h6>
+                            <small class="text-muted">Review, rekomendasi, dan pembahasan buku</small>
+                        </div>
+                        <div class="text-muted small ms-3">142 topik</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center p-4 bg-white border rounded shadow-sm">
+                        <div class="fs-3 me-3 p-2 rounded" style="background-color: #e8f3f1;">✏️</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold" style="color: #0f2240;">Karya Tulis</h6>
+                            <small class="text-muted">Berbagi cerpen, puisi, dan esai sendiri</small>
+                        </div>
+                        <div class="text-muted small ms-3">89 topik</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="fw-bold mb-0" style="color: #0f2240;">Diskusi Terbaru</h5>
+                        <select class="form-select form-select-sm w-auto border-secondary-subtle">
+                            <option>Terbaru</option>
+                            <option>Terpopuler</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex align-items-start p-4 bg-white border rounded mb-3 shadow-sm">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                            style="width: 45px; height: 45px; background: #f1f3f5;">👩</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1 fw-bold" style="color: #0f2240;">Rekomendasi buku tentang kecerdasan buatan
+                                untuk pelajar SMA?</h6>
+                            <div class="mb-2">
+                                <span class="badge rounded-pill text-warning border border-warning"
+                                    style="background: rgba(201,168,76,0.1); font-weight: 500;">🔥 Trending</span>
+                                <span class="badge rounded-pill text-dark border bg-light"
+                                    style="font-weight: 500;">Teknologi</span>
+                            </div>
+                            <small class="text-muted">oleh <strong style="color:#0f2240">Anisa R.</strong> • 2 jam
+                                lalu</small>
+                        </div>
+                        <div class="text-end ms-3">
+                            <div class="fw-bold" style="color:#0f2240"><i class="bi bi-chat me-1"></i>24</div>
+                            <small class="text-muted" style="font-size: 0.7rem;">Aktif 30 mnt lalu</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start p-4 bg-white border rounded mb-3 shadow-sm">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                            style="width: 45px; height: 45px; background: #f1f3f5;">👨</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1 fw-bold" style="color: #0f2240;">Review: Bumi Manusia oleh Pramoedya —
+                                Masterpiece Sastra</h6>
+                            <div class="mb-2">
+                                <span class="badge rounded-pill text-dark border bg-light"
+                                    style="font-weight: 500;">Sastra</span>
+                                <span class="badge rounded-pill text-dark border bg-light"
+                                    style="font-weight: 500;">Review</span>
+                            </div>
+                            <small class="text-muted">oleh <strong style="color:#0f2240">Budi S.</strong> • 5 jam
+                                lalu</small>
+                        </div>
+                        <div class="text-end ms-3">
+                            <div class="fw-bold" style="color:#0f2240"><i class="bi bi-chat me-1"></i>18</div>
+                            <small class="text-muted" style="font-size: 0.7rem;">Aktif 1 jam lalu</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="p-4 bg-white border rounded shadow-sm mb-4">
+                        <h6 class="fw-bold mb-3" style="color: #0f2240;">Statistik Forum</h6>
+                        <div class="d-flex justify-content-between small mb-2 text-muted">
+                            <span>Total Topik</span><strong class="text-dark">501</strong>
+                        </div>
+                        <div class="d-flex justify-content-between small mb-2 text-muted">
+                            <span>Total Balasan</span><strong class="text-dark">3.248</strong>
+                        </div>
+                        <div class="d-flex justify-content-between small text-muted">
+                            <span>Anggota Aktif</span><strong class="text-dark">850</strong>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-white border rounded shadow-sm">
+                        <h6 class="fw-bold mb-3" style="color: #0f2240;">Anggota Teraktif</h6>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-light rounded-circle p-2 me-3">👩</div>
+                            <div class="small">
+                                <div class="fw-bold">Anisa Rahmawati</div>
+                                <div class="text-muted">128 postingan</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-light rounded-circle p-2 me-3">👨</div>
+                            <div class="small">
+                                <div class="fw-bold">Budi Santoso</div>
+                                <div class="text-muted">94 postingan</div>
+                            </div>
+                        </div>
+                        <hr class="text-muted opacity-25">
+                        <h6 class="fw-bold mb-3 small" style="color: #0f2240;">Tag Populer</h6>
+                        <div class="d-flex flex-wrap gap-1">
+                            <span class="badge bg-light text-dark border fw-normal">Rekomendasi</span>
+                            <span class="badge bg-light text-dark border fw-normal">Sastra</span>
+                            <span class="badge bg-light text-dark border fw-normal">Teknologi</span>
+                            <span class="badge bg-light text-dark border fw-normal">SNBP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-5 pb-3 text-white-50" style="background-color: #0a1828;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <h5 class="text-white brand-font mb-3">LiberaSpace</h5>
+                    <p class="small">Perpustakaan digital sekolah yang menghubungkan siswa, guru, dan komunitas melalui
+                        budaya membaca.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-3">Navigasi</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-white-50">Beranda</a></li>
+                        <li><a href="#" class="text-decoration-none text-white-50">Katalog</a></li>
+                        <li><a href="#" class="text-decoration-none text-white-50">Event</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 offset-lg-3">
+                    <h6 class="text-white mb-3">Kontak</h6>
+                    <p class="small mb-1"><i class="bi bi-geo-alt text-warning me-2"></i> Jl. Pendidikan No. 1, Jakarta
+                    </p>
+                    <p class="small mb-1"><i class="bi bi-envelope text-warning me-2"></i> ershykembaren@gmail.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between small">
+                <span>© 2026 LiberaSpace.</span>
+                <span class="text-warning">Membangun Generasi Literat</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
