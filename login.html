@@ -62,37 +62,64 @@
                     Masuk untuk melanjutkan ke LiberaSpace
                 </p>
             </div>
+<form onsubmit="loginUser(event)">
 
-            <form onsubmit="loginUser(event)">
-            
-                <div class="mb-3">
-                    <label class="form-label small">Email</label>
-                    <div class="input-group">
-                        <span class="input-group-text bg-white">
-                            <i class="bi bi-envelope"></i>
-                        </span>
-                        <input
-type="email"
-id="email"
-class="form-control"
-placeholder="Masukkan email"
-required>
-                </div>
+    <!-- EMAIL -->
+    <div class="mb-3">
 
-                <!-- <div class="d-flex justify-content-between mb-3 small">
-                    <div>
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Ingat saya</label>
-                    </div>
-                    <a href="#" class="text-decoration-none" style="color:#c9a84c;">Lupa password?</a>
-                </div> -->
+        <label class="form-label small">Email</label>
 
-                <button type="submit" class="btn w-100 fw-bold text-uppercase"
-                    style="background:#c9a84c; color:#0f2240;">
-                    Login
-                </button>
-            </form>
+        <div class="input-group">
 
+            <span class="input-group-text bg-white">
+                <i class="bi bi-envelope"></i>
+            </span>
+
+            <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Masukkan email"
+                required>
+
+        </div>
+
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="mb-3">
+
+        <label class="form-label small">Password</label>
+
+        <div class="input-group">
+
+            <span class="input-group-text bg-white">
+                <i class="bi bi-lock"></i>
+            </span>
+
+            <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Masukkan password"
+                required>
+
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button
+        type="submit"
+        class="btn w-100 fw-bold text-uppercase"
+        style="background:#c9a84c; color:#0f2240;">
+
+        Login
+
+    </button>
+
+</form>
+          
             <!-- REGISTER -->
             <!-- <div class="text-center mt-4 small">
                 Belum punya akun?
