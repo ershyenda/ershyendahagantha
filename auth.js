@@ -1,3 +1,19 @@
+// REGISTER
+function registerUser(event) {
+
+    event.preventDefault();
+
+    const email = document.getElementById("registerEmail").value;
+    const password = document.getElementById("registerPassword").value;
+
+    // simpan akun
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userPassword", password);
+
+    alert("Registrasi berhasil!");
+
+    window.location.href = "login.html";
+}
 // LOGIN
 
 function loginUser(event) {
@@ -6,8 +22,8 @@ function loginUser(event) {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const validEmail = "admin@gmail.com";
-    const validPassword = "123456";
+    const validEmail = localStorage.getItem("userEmail");
+const validPassword = localStorage.getItem("userPassword");
 
     if (email === validEmail && password === validPassword) {
 
